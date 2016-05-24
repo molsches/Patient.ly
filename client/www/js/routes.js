@@ -19,12 +19,12 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('tabs.conditions', {
-    url: '/conditions',
+  .state('tabs.doctors', {
+    url: '/doctors',
     views: {
-      'conditions-tab': {
-        templateUrl: 'templates/healthConditions.html',
-        controller: 'HealthConditionsCtrl'
+      'doctors-tab': {
+        templateUrl: 'templates/doctorSearch.html',
+        controller: 'DoctorSearchCtrl'
       }
     }
   })

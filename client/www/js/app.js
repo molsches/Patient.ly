@@ -6,6 +6,6 @@ angular.module('app', [
   'app.medications',
   // 'app.home',
   // 'app.searchDrugs',
-  'app.conditions'
+  'app.doctorSearch'
 ])
 
