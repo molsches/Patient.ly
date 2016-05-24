@@ -3,10 +3,6 @@
     <form ng-submit="searchDoctors(query)">
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Keyword</span>
-          <input placeholder="e.g. toothache (optional)" ng-model="query.keyword" type="text">
-        </label>
-        <label class="item item-input">
           <span class="input-label">Location</span>
           <input placeholder="e.g. ca-berkeley" ng-model="query.location" type="text">
         </label>
@@ -22,7 +18,9 @@
       <a class="item item-avatar" href="#" ng-repeat="doctor in results">
         <img src="{{ doctor.image }}">
         <h2>{{ doctor.title }}</h2>
-        <p>{{ doctor.specialty }}</p>
+        <p>
+          {{ doctor.specialty }}, Rating: {{ doctor.rating }} 
+        </p>
       </a>
     </div>
   </ion-content>
