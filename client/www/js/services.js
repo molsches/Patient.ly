@@ -58,3 +58,25 @@ angular.module('app.services', [])
   return Conditions;
 })
 
+.factory('Doctors', function($http) {
+  var Doctors = {};
+
+  Doctors.searchDoctors = function(params) {
+    var specialty = params.specialty;
+    var location = params.location;
+    var apiKey = 'e484dc3a771841e45672aac0b93c21ac';
+    var doctorUrl = 'https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=' + specialty + '&location=' + location + '&skip=0&limit=15&user_key=' + apiKey;
+    
+    return $http.get(doctorUrl)
+      .success(function(results) {
+        console.log('successfully retrieved list of doctors!');
+        return results.data;
+      })
+      .error(function(err) {
+        console.error('error in searching doctors!');
+      });
+  };
+
+  return Doctors;
+});
+
