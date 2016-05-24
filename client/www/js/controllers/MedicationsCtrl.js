@@ -34,7 +34,7 @@ angular.module('app.medications', [])
 
   $scope.drug = {};
 
-  $ionicModal.fromTemplateUrl('../../templates/addMedication.html', {
+  $ionicModal.fromTemplateUrl('../../templates/addMedicationModal.html', {
     scope: $scope,
     animation: 'slide-in-up',
     })
