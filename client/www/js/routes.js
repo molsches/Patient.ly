@@ -3,24 +3,32 @@ angular.module('app.routes', [])
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-  .state('home', {
-    url: '/',
-    templateUrl: 'templates/home.html',
-    controller: 'HomeCtrl'
+  .state('tabs', {
+      url: "/tab",
+      abstract: true,
+      templateUrl: "templates/NavBar.html"
   })
 
-  .state('medications', {
+  .state('tabs.medications', {
     url: '/medications',
-    templateUrl: 'templates/medications.html',
-    controller: 'MedicationsCtrl'
+    views: {
+      'medications-tab': {
+        templateUrl: 'templates/medications.html',
+        controller: 'MedicationsCtrl'
+      }
+    }
   })
 
-  .state('healthConditions', {
+  .state('tabs.conditions', {
     url: '/conditions',
-    templateUrl: 'templates/healthConditions.html',
-    controller: 'HealthConditionsCtrl'
+    views: {
+      'conditions-tab': {
+        templateUrl: 'templates/healthConditions.html',
+        controller: 'HealthConditionsCtrl'
+      }
+    }
   })
 
-$urlRouterProvider.otherwise('/medications')
+$urlRouterProvider.otherwise('/tab/medications')
 
 });
