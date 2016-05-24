@@ -1,4 +1,4 @@
-# Project Name #
+# Patient.ly #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,29 +16,26 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Target Audience ##
+  > For healthcare patients and consumers.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Better manage your health information by keeping track of your 
+  current medications and potential drug interactions. The user can also search and get information about a drug, learn about health conditions, and perform diagnostic analysis.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > As a patient's list of medications grow, it is important to check for drug interactions with each newly added drug to ensure the patient's health is not at risk. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Patient.ly enables users to keep track of their current list of medications, and checks for drug interactions every time the user adds a new medication to their list. In addition, users can search for information on a variety of drugs and health conditions.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "A wonderful app that provides people with more power to manage and improve their health."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Download the app and start tracking your health!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "Now I have one less thing to worry about!"
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
