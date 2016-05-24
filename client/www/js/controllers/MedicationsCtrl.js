@@ -1,6 +1,8 @@
 angular.module('app.medications', [])
   
 .controller('MedicationsCtrl', function($scope, $rootScope, $ionicModal, Drugs, $ionicPopup) {
+  $scope.listCanSwipe = true
+  $scope.shouldShowDelete = false;
 
   $scope.drugs = [
     {'name': 'Tylenol',
