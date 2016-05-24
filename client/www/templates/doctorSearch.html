@@ -1,12 +1,29 @@
-<ion-view>
+<ion-view title="Find Nearby Doctors">
   <ion-content padding="true" class="has-header">
-    <div ng-controller="DoctorSearchCtrl">
-       <button ng-click="getAllConditions()" id="medications-button13" class="button button-positive  button-block">Search health conditions</button>
-      <ion-list>
-        <ion-item>
-          
-        </ion-item>
-      </ion-list>
+    <form ng-submit="searchDoctors(query)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Keyword</span>
+          <input placeholder="e.g. toothache (optional)" ng-model="query.keyword" type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Location</span>
+          <input placeholder="e.g. ca-berkeley" ng-model="query.location" type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Specialty</span>
+          <input ng-model="query.specialty" placeholder="e.g. pediatrician (optional)" type="text">
+        </label>
+      </div>
+      <button class="button button-positive  button-block">Search for Doctors</button>
+    </form>
+
+    <div class="list">
+      <a class="item item-avatar" href="#" ng-repeat="doctor in results">
+        <img src="{{ doctor.image }}">
+        <h2>{{ doctor.title }}</h2>
+        <p>{{ doctor.specialty }}</p>
+      </a>
     </div>
   </ion-content>
 </ion-view>
