@@ -15,13 +15,15 @@
     </form>
 
     <div class="list">
-      <a class="item item-avatar" href="#" ng-repeat="doctor in results">
+      <div class="item item-avatar" 
+        ng-repeat="doctor in results"
+        ng-click="doctorDetails(doctor)">
         <img src="{{ doctor.image }}">
         <h2>{{ doctor.title }}</h2>
         <p>
           {{ doctor.specialty }}, Rating: {{ doctor.rating }} 
         </p>
-      </a>
+      </div>
     </div>
   </ion-content>
 </ion-view>

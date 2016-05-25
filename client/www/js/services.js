@@ -39,22 +39,6 @@ angular.module('app.services', [])
     });
   };
 
-  Conditions.fluTracker = function() {
-    return $http({
-      method: 'GET',
-      url: 'http://api.flutrack.org/results.json?s=feverANDcoughORfever?time=7',
-      headers: {
-        'Access-Control-Allow-Origin': 'http://localhost:8100'
-      }
-    })
-      .success(function(data) {
-        return data;
-      })
-      .error(function(err) {
-        console.error('error in getting flu tracker');
-      });
-  };
-
   return Conditions;
 })
 

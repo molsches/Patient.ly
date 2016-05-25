@@ -1,0 +1,22 @@
+<ion-modal-view>
+  <div class="bar bar-header bar-dark">
+    <h1 class="title">{{ doctor.title }}</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Cancel</button>
+    </div>
+  </div>
+  <ion-content class="has-header">
+    <div class="item item-thumbnail-left">
+      <img src="{{ doctor.image }}">
+      <h2>{{ doctor.title }}</h2>
+     
+        <div><h3>{{ doctor.specialty }}</h3></div>
+        <div><h3>Phone: {{ doctor.phones }}</h3></div>
+        <p>
+          <div>{{ doctor.location.street }}, {{ doctor.location.street2 }}</div>
+          <div>{{ doctor.location.city }}, {{ doctor.location.state }} {{ doctor.location.zip }}</div>
+        </p>
+    </div>
+    <div class="item item-body">{{ doctor.bio }}</div>
+  </ion-content>
+</ion-modal-view>
