@@ -7,8 +7,8 @@ angular.module('app.doctorSearch', [])
 
   $scope.searchDoctors = function() {
     Doctors.searchDoctors($scope.query).then(function(results) {
-      console.log('results.data from doc search', results);
       var allResults = results.data.data;
+      
       allResults.forEach(function(doc) {
         var result = {
           title: doc.profile.first_name + ' ' + doc.profile.last_name + ', ' + doc.profile.title,
@@ -20,9 +20,6 @@ angular.module('app.doctorSearch', [])
           location: doc.practices[0].visit_address
         };
         result.rating = doc.ratings.length !== 0 ? doc.ratings[0].rating : 'Not available';
-        // var loc = doc.practices[0].visit_address;
-        // result.location = loc.street + ', ' + loc.street2 + 
-        //   loc.city + ', ' + loc.state + ' ' + loc.zip;
 
         $scope.results.push(result);
       });

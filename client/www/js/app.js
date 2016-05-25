@@ -4,7 +4,6 @@ angular.module('app', [
   'app.services', 
   'ui.router',
   'app.medications',
-  // 'app.home',
   // 'app.searchDrugs',
   'app.doctorSearch'
 ])

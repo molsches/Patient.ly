@@ -29,15 +29,6 @@ angular.module('app.routes', [])
     }
   })
 
-  // .state('doctor-detail', {
-  //   url: '/doctors/{doctorId}',
-  //   templateUrl: 'templates/doctor-details.html',
-  //   controller: function($scope, $stateParams) {
-  //     console.log('$stateParams: ', $stateParams);
-  //     $scope.doctor = $stateParams;
-  //   }
-  // })
-
 $urlRouterProvider.otherwise('/tab/medications')
 
 });
