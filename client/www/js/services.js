@@ -18,30 +18,6 @@ angular.module('app.services', [])
   return Drugs;
 })
 
-.factory('Conditions', function($http) {
-  var Conditions = {};
-
-  Conditions.getAllConditions = function() {
-    return $http({
-      method: 'GET',
-      url: 'https://api.infermedica.com/v2/conditions',
-      headers: {
-        'app_id': '295196e3',
-        'app_key': 'bc9784b50cd2d964e8b75abdd9b4cb9d'
-      }
-    })
-    .success(function(data) {
-      console.log('successfully retrieved all conditions!');
-      return data;
-    })
-    .error(function(err) {
-      console.error('error in getting all conditions');
-    });
-  };
-
-  return Conditions;
-})
-
 .factory('Doctors', function($http) {
   var Doctors = {};
 
