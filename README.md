@@ -15,6 +15,7 @@ bower install
 
 Once the dependencies are installed, you can start the application with:
 ```sh
-ionic start 
+cd client/
+ionic serve --lab 
 ```
-Open your web browser and go to `http://localhost:3000` to see the app running.
+Open your web browser and go to `http://localhost:8100/ionic-lab` to see the app running in the iOS simulator.
