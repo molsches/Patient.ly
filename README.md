@@ -2,6 +2,8 @@
 
 > Patient.ly is a health information and management app that keeps track of your current medications and checks for potential drug interactions. The user can also search and get information about a drug, as well as search for nearby healthcare providers.
 
+(Patient.ly-Mockups)[https://github.com/teganduong/Patient.ly/blob/master/patiently_mockups.png]
+
 ## Setup
 
 Clone this repo to your local work station and from within the root directory:
